@@ -39,16 +39,16 @@ export default function HomePage() {
           program my parents to feed me whenever I wanted. Years later, in the academy (high school), I explored <strong>Turbo Pascal</strong> and microcontroller programming.
         </p>
         <p>
-          Since then, I’ve lived among machines — supporting complex systems, debugging errors that felt like glitches in the Matrix,
-          and working side-by-side with developers (not just because they sat in the next room). I’ve configured ERP and WMS systems,
+          Since then, I&apos;ve lived among machines — supporting complex systems, debugging errors that felt like glitches in the Matrix,
+          and working side-by-side with developers (not just because they sat in the next room). I&apos;ve configured ERP and WMS systems,
           maintained SQL servers, and written deployment scripts that could probably pass the Turing test on a good day.
         </p>
         <p>
-          After years in technical support, my destiny has become clear — it’s time to switch from maintaining starships to <strong>building them</strong>.
+          After years in technical support, my destiny has become clear — it&apos;s time to switch from maintaining starships to <strong>building them</strong>.
           The code force runs strong, and my mission is to create, optimize, and evolve software that would make even Skynet proud (in a *non-apocalyptic* way).
         </p>
         <p>
-          Whether we’re talking Starfleet precision, Jedi discipline, or Neo-like problem-solving — I’m ready to plug in and start coding.
+          Whether we&apos;re talking Starfleet precision, Jedi discipline, or Neo-like problem-solving — I&apos;m ready to plug in and start coding.
           Live long and compile. 🖖
         </p>
       </motion.div>
@@ -61,24 +61,24 @@ export default function HomePage() {
       >
         <h1 className="text-5xl font-bold mb-4 pb-6">
           <span className="block sm:inline">Hi,</span>{" "}
-          <span className="block sm:inline">I’m Michal Sokirka</span>
+          <span className="block sm:inline">I&apos;m Michal Sokirka</span>
         </h1>
         <p>
           Coding has been my constant curiosity and passion. In high school, I explored <strong>Turbo Pascal</strong> and
-          <strong> microcontroller programming</strong>, and over the years, I’ve always stayed close to software development — even while
+          <strong> microcontroller programming</strong>, and over the years, I&apos;ve always stayed close to software development — even while
           working in IT support roles.
         </p>
         <p>
           After university, I spent over a decade <strong>refining my technical expertise</strong> in support positions, assisting users,
-          troubleshooting complex systems, and collaborating closely with development teams. I’ve worked with ERP and WMS applications,
+          troubleshooting complex systems, and collaborating closely with development teams. I&apos;ve worked with ERP and WMS applications,
           managed SQL servers, automated deployments with PowerShell and Octopus Deploy, and resolved challenging integration issues across
           applications, databases, and OS. This experience has given me a solid foundation in understanding software from both technical and
           user perspectives.
         </p>
         <p>
-          Now, it’s time for the next chapter: fully stepping into programming. My journey in support has not only strengthened my
+          Now, it&apos;s time for the next chapter: fully stepping into programming. My journey in support has not only strengthened my
           problem-solving skills and technical adaptability but also fueled my desire to create, optimize, and build software from the ground
-          up. I’m eager to bring my decades of hands-on technical experience, curiosity, and persistence into a programmer role — combining
+          up. I&apos;m eager to bring my decades of hands-on technical experience, curiosity, and persistence into a programmer role — combining
           practical insights with coding expertise to deliver high-quality solutions.
         </p>
       </motion.div>

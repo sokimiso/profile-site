@@ -10,7 +10,7 @@ export const MoodSwitcher: React.FC<MoodSwitcherProps> = ({ mood, onChange }) =>
   return (
     <div className="flex flex-col items-center p-4">
       <p className="text-lg text-gray-300 text-center p-2">
-        Let's set up the mood first. Who are you?
+        Let&apos;s set up the mood first. Who are you?
       </p>
       <div className="flex flex-wrap justify-center space-x-6">
         {[
