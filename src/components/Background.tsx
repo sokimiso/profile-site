@@ -14,14 +14,8 @@ interface Particle {
 }
 
 export const Background: React.FC<{ mood: Mood }> = ({ mood }) => {
-  const colors = {
-    hiring: "#001133",
-    geek: "#003033",
-    ai: "#003033",
-    barbra: "#330033",
-  };
 
-  // 🟦 Particle system (for AI now)
+  // Particle system (for AI now)
   const [particles, setParticles] = useState<Particle[]>([]);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
