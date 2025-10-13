@@ -59,7 +59,7 @@ export default function HomePage() {
         transition={{ duration: 0.6 }}
         className="text-gray-200 space-y-4 text-justify"
       >
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-5xl font-bold mb-4 pb-6">
           <span className="block sm:inline">Hi,</span>{" "}
           <span className="block sm:inline">I’m Michal Sokirka</span>
         </h1>
