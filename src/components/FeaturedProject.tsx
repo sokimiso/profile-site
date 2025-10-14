@@ -24,8 +24,7 @@ export const FeaturedProject: React.FC = () => {
     { name: "Basic photographer website layout", done: true },
     { name: "Users management (dashboard)", done: true },
     { name: "Orders management (dashboard)", done: true },
-    { name: "Fine-tune reservation form", done: false },
-    { name: "Add pages for galleries and services", done: false },
+    { name: "Add galleries and services", done: false },
     { name: "Photo upload section for orders (dashboard)", done: false },
     { name: "Site management (dashboard)", done: false },
     { name: "Notifications (dashboard)", done: false },
@@ -76,7 +75,7 @@ export const FeaturedProject: React.FC = () => {
         <a href="https://sokirka.com" className="text-cyan-400 underline" target="_blank" rel="noopener noreferrer">
           live portfolio
         </a>{" "}
-        hosted on a Raspberry Pi 4 with Ubuntu Server. It features a booking option, user and order dashboard, and a lightweight order management system. 
+        hosted on a Raspberry Pi 4 with Ubuntu Server. It features booking and a lightweight order management system. 
         More features are in progress — see the roadmap below.
       </p>
 

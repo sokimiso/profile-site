@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Keyboard, Settings } from "lucide-react";
 import { motion } from "framer-motion";
 import { Mood } from "../types";
 import { MoodSwitcher } from "../components/MoodSwitcher";
 import { Background } from "../components/Background";
 import { FeaturedProject } from "../components/FeaturedProject";
+
 
 export default function HomePage() {
   const [mood, setMood] = useState<Mood>("hiring");
@@ -32,8 +34,9 @@ export default function HomePage() {
         className="text-yellow-200 space-y-4 text-justify font-mono"
       >
         <h1 className="text-5xl font-bold mb-4 text-yellow-400">
-          <span className="block sm:inline">Greetings, Fellow Traveler of the Code Galaxy</span>{" "}
-          <span className="block sm:inline">🌌</span>          
+          <span className="block sm:inline">Greetings, Fellow Traveler of the</span>{" "}
+          <span>Code Galaxy 🌌</span>
+         
            
         </h1>
         <p>
@@ -51,8 +54,8 @@ export default function HomePage() {
         </p>
         <p>
           Whether we&apos;re talking Starfleet precision, Jedi discipline, or Neo-like problem-solving — I&apos;m ready to plug in and start coding.
-          Live long and compile. 🖖
         </p>
+        <p>Live long and compile. 🖖</p>
       </motion.div>
     ) : (
       <motion.div
@@ -91,13 +94,13 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="max-w-4xl text-gray-200 mt-8 md:mt-16 w-full"
+      className="max-w-4xl text-gray-200 mt-8 w-full"
     >
       <h2 className="text-3xl font-semibold mb-8 text-cyan-400 text-center">Hard Skills</h2>
 
       {/* Modern Development */}
       <div className="mb-8">
-        <h3 className="text-xl font-semibold text-cyan-300 mb-3">💻 Modern Development</h3>
+        <h3 className="text-xl font-semibold text-cyan-300 mb-3 flex items-center gap-2 justify-center">{<Keyboard />}Modern Development</h3>
         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-300">
           <li className="hover:text-cyan-400 transition-colors">TypeScript</li>
           <li className="hover:text-cyan-400 transition-colors">Next.js</li>
@@ -116,7 +119,7 @@ export default function HomePage() {
 
       {/* IT & DevOps Experience */}
       <div className="mb-8">
-        <h3 className="text-xl font-semibold text-cyan-300 mb-3">⚙️ IT & DevOps Expertise</h3>
+        <h3 className="text-xl font-semibold text-cyan-300 mb-3 flex items-center gap-2 justify-center">{<Settings />}IT & DevOps Expertise</h3>
         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-300">
           <li className="hover:text-cyan-400 transition-colors">MS Windows Server (administration)</li>
           <li className="hover:text-cyan-400 transition-colors">Linux (basics)</li>
@@ -138,19 +141,19 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="max-w-4xl text-gray-200 mt-8 md:mt-16 w-full"
+      className="max-w-4xl text-gray-200 mt-8 w-full"
     >
-      <h2 className="text-3xl font-semibold mb-8 text-green-400 text-center">Soft Skills</h2>
+      <h2 className="text-3xl font-semibold mb-8 text-cyan-400 text-center">Soft Skills</h2>
       <div className="mb-8">
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-300">
-          <li className="hover:text-green-400 transition-colors">Problem-solving & Analytical Thinking</li>
-          <li className="hover:text-green-400 transition-colors">Adaptability & Learning Agility</li>
-          <li className="hover:text-green-400 transition-colors">Collaboration & Teamwork</li>
-          <li className="hover:text-green-400 transition-colors">Communication Skills</li>
-          <li className="hover:text-green-400 transition-colors">Time Management & Prioritization</li>
-          <li className="hover:text-green-400 transition-colors">Attention to Detail</li>
-          <li className="hover:text-green-400 transition-colors">Empathy & User-focus</li>
-          <li className="hover:text-green-400 transition-colors">Resilience & Perseverance</li>
+          <li className="hover:text-cyan-400 transition-colors">Problem-solving & Analytical Thinking</li>
+          <li className="hover:text-cyan-400 transition-colors">Adaptability & Learning Agility</li>
+          <li className="hover:text-cyan-400 transition-colors">Collaboration & Teamwork</li>
+          <li className="hover:text-cyan-400 transition-colors">Communication Skills</li>
+          <li className="hover:text-cyan-400 transition-colors">Time Management & Prioritization</li>
+          <li className="hover:text-cyan-400 transition-colors">Attention to Detail</li>
+          <li className="hover:text-cyan-400 transition-colors">Empathy & User-focus</li>
+          <li className="hover:text-cyan-400 transition-colors">Resilience & Perseverance</li>
         </ul>
       </div>
     </motion.div>
@@ -162,9 +165,9 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.8 }}
-      className="text-gray-200 space-y-4 pb-20"
+      className="text-gray-200 space-y-4 mt-8 pb-20"
     >
-      <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+      <h2 className="text-3xl font-semibold mb-8 text-cyan-400 text-center">Contact</h2>
       <p>
         Find me on{" "}
         <a href="https://github.com/sokimiso" className="text-cyan-400 underline" target="_blank" rel="noopener noreferrer">
@@ -249,7 +252,7 @@ export default function HomePage() {
       {/* Page content */}
       <div className="md:mt-20 w-full flex flex-col items-center">
         {/* Unified max width container */}
-        <div className="w-full max-w-4xl flex flex-col items-center md:gap-16">
+        <div className="w-full max-w-4xl flex flex-col items-center md:gap-10">
           {(mood === "hiring" || mood === "geek") && (
             <>
               {aboutMe}
