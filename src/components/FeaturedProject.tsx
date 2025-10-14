@@ -68,7 +68,7 @@ export const FeaturedProject: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="max-w-4xl text-gray-200 text-justify mt-16 w-full"
+      className="max-w-4xl text-gray-200 text-justify mt-8 md:mt-16 w-full"
     >
       <h2 className="text-3xl font-semibold mb-6 text-cyan-400 text-center">Featured Project</h2>
       <p>

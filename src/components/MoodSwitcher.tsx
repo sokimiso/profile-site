@@ -8,7 +8,7 @@ interface MoodSwitcherProps {
 
 export const MoodSwitcher: React.FC<MoodSwitcherProps> = ({ mood, onChange }) => {
   return (
-    <div className="flex flex-col items-center p-4">
+    <div className="flex flex-col items-center md:p-4 pb-8">
       <p className="text-lg text-gray-300 text-center p-2">
         Let&apos;s set up the mood first. Who are you?
       </p>

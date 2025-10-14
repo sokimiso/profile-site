@@ -32,7 +32,9 @@ export default function HomePage() {
         className="text-yellow-200 space-y-4 text-justify font-mono"
       >
         <h1 className="text-5xl font-bold mb-4 text-yellow-400">
-          Greetings, Fellow Traveler of the Code Galaxy 🌌
+          <span className="block sm:inline">Greetings, Fellow Traveler of the Code Galaxy</span>{" "}
+          <span className="block sm:inline">🌌</span>          
+           
         </h1>
         <p>
           My programming journey started long ago, in a galaxy not so far away — 1984. I may not have built R2-D2, but I did successfully
@@ -59,9 +61,9 @@ export default function HomePage() {
         transition={{ duration: 0.6 }}
         className="text-gray-200 space-y-4 text-justify"
       >
-        <h1 className="text-5xl font-bold mb-4 pb-6">
-          <span className="block sm:inline">Hi,</span>{" "}
-          <span className="block sm:inline">I&apos;m Michal Sokirka</span>
+        <h1 className="text-5xl font-bold mb-4 md:pb-6">
+          <span className="block sm:inline">Hi, I&apos;m</span>{" "}
+          <span className="block sm:inline">Michal Sokirka</span>
         </h1>
         <p>
           Coding has been my constant curiosity and passion. In high school, I explored <strong>Turbo Pascal</strong> and
@@ -89,7 +91,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="max-w-4xl text-gray-200 mt-16 w-full"
+      className="max-w-4xl text-gray-200 mt-8 md:mt-16 w-full"
     >
       <h2 className="text-3xl font-semibold mb-8 text-cyan-400 text-center">Hard Skills</h2>
 
@@ -136,7 +138,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="max-w-4xl text-gray-200 mt-16 w-full"
+      className="max-w-4xl text-gray-200 mt-8 md:mt-16 w-full"
     >
       <h2 className="text-3xl font-semibold mb-8 text-green-400 text-center">Soft Skills</h2>
       <div className="mb-8">
@@ -202,7 +204,7 @@ export default function HomePage() {
   );
 
   const aiJoke = (
-    <div className="flex flex-col justify-center h-full">
+    <div className="flex flex-col justify-center h-full mt-32">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -223,7 +225,7 @@ export default function HomePage() {
   );
 
   const barbra = (
-    <div className="flex flex-col h-full text-pink-300 text-7xl font-bold">
+    <div className="flex flex-col h-full text-pink-300 text-7xl font-bold mt-32">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1 }}
@@ -240,14 +242,14 @@ export default function HomePage() {
       <Background mood={mood} />
 
       {/* Mood Selector */}
-      <div className="bg-black/20 backdrop-blur-md px-4 py-2 rounded-xl shadow-md z-50 top-4 ">
+      <div className="bg-black/20 backdrop-blur-md md:px-4 py-2 rounded shadow-md z-50 top-4 ">
         <MoodSwitcher mood={mood} onChange={setMood} />
       </div>
 
       {/* Page content */}
-      <div className="mt-20 w-full flex flex-col items-center">
+      <div className="md:mt-20 w-full flex flex-col items-center">
         {/* Unified max width container */}
-        <div className="w-full max-w-4xl flex flex-col items-center gap-16">
+        <div className="w-full max-w-4xl flex flex-col items-center md:gap-16">
           {(mood === "hiring" || mood === "geek") && (
             <>
               {aboutMe}
