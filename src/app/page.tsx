@@ -106,6 +106,7 @@ export default function HomePage() {
           <li className="hover:text-cyan-400 transition-colors">Next.js</li>
           <li className="hover:text-cyan-400 transition-colors">React</li>
           <li className="hover:text-cyan-400 transition-colors">TailwindCSS</li>
+          <li className="hover:text-cyan-400 transition-colors">Python</li>
           <li className="hover:text-cyan-400 transition-colors">Node.js</li>
           <li className="hover:text-cyan-400 transition-colors">Prisma</li>
           <li className="hover:text-cyan-400 transition-colors">NestJS</li>
